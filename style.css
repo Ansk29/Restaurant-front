@@ -1,0 +1,137 @@
+/* Apply basic sans-serif font */
+
+
+
+body, .navbar {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link-custom {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link-custom i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-link-custom:hover i {
+    transform: scale(1.2);
+}
+
+.nav-link-custom:hover {
+    color: #ffc107 !important;
+}
+
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+
+
+
+.hero-section {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+   background-size: cover;
+    background-position: center;
+    }
+    
+    .hero-content {
+     max-width: 500px; /* Control the width of the content */
+     margin-left: 70px; /* Ensure it is fully aligned to the left */
+    padding-left: 50px; /* Adjust this for additional spacing from the left edge */
+     text-align: center; /* Keep text aligned to the left */
+     
+    }
+    
+    
+
+
+.food-items {
+
+    background-color: #070500;
+    padding-top: 50px;
+    
+
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap onto the next row */
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    
+}
+
+.food-card {
+    width: 25%; 
+    
+    /* Each card takes up 30% of the row, which allows for 3 items per row */
+    background-color: #f6e0c8e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.food-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.food-info {
+    padding: 15px;
+    color: #22211f;
+}
+
+.food-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.food-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.food-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+}
+
+
+
+.add-to-cart-btn{
+    color: #392506;
+    background-color: rgba(129, 87, 29, 0.321);
+    
+}
